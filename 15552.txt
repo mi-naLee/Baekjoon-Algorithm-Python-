@@ -1,0 +1,12 @@
+# 빠른 입력을 위해 input 대신 sys.stdin.readline 사용
+# readline 사용 위해 import
+# 글 추가 설명에 나온 것처럼 readline이 너무 길기 때문에 
+# input = readline 해줌
+import sys 
+input = sys.stdin.readline 
+
+test=int(input())
+
+for i in range(test):
+    a,b = map(int,input().split())
+    print(a+b)
