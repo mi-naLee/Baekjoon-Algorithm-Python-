@@ -1,0 +1,5 @@
+n=int(input())
+for i in range(n,0,-1): # 출력 범위 : n부터 0의 전까지 거꾸로 가며 출력
+    print(i)
+profile
+anfruf
