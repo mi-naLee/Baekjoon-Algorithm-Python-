@@ -1,0 +1,4 @@
+# list 내포 : [표현식 for문 if문]
+# join : 구분자.join(리스트)
+n,x=map(int,input().split())
+print(' '.join([i for i in input().split() if int(i) < x]))
