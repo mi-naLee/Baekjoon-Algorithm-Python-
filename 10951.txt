@@ -1,0 +1,6 @@
+while 1:
+    try:
+        a,b=map(int,input().split()) # 입력을 받아라
+    except: # 입력 없으면 반복문을 나가라
+        break
+    print(a+b) # 정상 처리시 try 후 출력
