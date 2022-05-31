@@ -1,0 +1,15 @@
+n = int(input())
+number = n;
+
+count = 0
+while 1:
+    a = number//10
+    b = number%10
+    sum = a+b
+    new_number = b*10 + sum%10
+
+    number = new_number
+    count += 1 
+    if new_number == n: break #새로운 수가 입력값과 같을 때 반복 break
+
+print(count)
