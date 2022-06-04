@@ -1,0 +1,9 @@
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+
+result = str(n1*n2*n3) # 세 수의 곱셈값을 문자열로 변환
+
+for i in range(10): # 
+    print(result.count(str(i))) 
+    # count() : result에서 0~9까지의 문자가 몇 개인지 센다. 
