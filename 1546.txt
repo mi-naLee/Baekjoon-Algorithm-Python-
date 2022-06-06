@@ -1,0 +1,8 @@
+test = int(input())
+score=list(map(int,input().split())) # 점수들 입력받기
+
+sum = 0
+for i in range(test): # 새로운 점수들의 총합 구하기
+    sum = sum + score[i]/max(score)*100
+    
+print(sum/test) # 새로운 점수의 총합/과목수 == 새로운 평균
