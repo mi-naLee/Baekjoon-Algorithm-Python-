@@ -1,0 +1,14 @@
+test = int(input())
+
+for i in range(test):
+    st = input() 
+    
+    sum=0
+    cnt=1
+    for j in st: # 문자열을 돌기
+        if j=='O': # 'O'일 때는 연속 count
+            sum +=cnt
+            cnt+=1
+        else: # 'X'일 때는 연속 count 초기화
+            cnt=1
+    print(sum)
