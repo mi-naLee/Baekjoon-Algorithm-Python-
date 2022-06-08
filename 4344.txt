@@ -1,0 +1,18 @@
+test = int(input())
+
+avg=0
+for i in range(test):
+
+	# n명, n명의 점수 나란히 입력받기
+    score = list(map(int, input().split())) 
+    avg = sum(score[1:]) / score[0] # score[0]은 인원수
+    
+    # 평균보다 높은 인원수 세기
+    count=0
+    for i in score[1:]:
+        if i>avg:
+            count += 1 
+
+	# 평균보다 높은 인원수의 비율 출력
+    result = count/score[0]*100
+    print(f'{result:.3f}%')
