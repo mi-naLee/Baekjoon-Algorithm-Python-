@@ -1,0 +1,16 @@
+def check(n): 
+    num = n
+    while(n>0): # 몫이 0이 될 때까지 나누며
+        num = num + n%10 # 자기 자신 + 각 자리 수 더하기
+        n = n//10
+    return num
+
+# set은 중복을 허용하지 않는다.
+set = set()
+#문제에서 제시된 범위(10000)를 돌며 넘버를 만들어 집합 생성
+for i in range(1,10000): 
+    set.add(check(i))
+# 집합에 없는 숫자 출력
+for i in range(1, 10000):
+    if i not in set: # if A not int B : 만약 B에 A가 없다면
+        print(i)
