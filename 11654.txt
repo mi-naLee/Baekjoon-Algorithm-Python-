@@ -1,0 +1,2 @@
+n=input()
+print(ord(n)) # ord() : 아스키 코드 값 RTN
