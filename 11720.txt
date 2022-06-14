@@ -1,0 +1,8 @@
+n = int(input())
+input=input() #숫자로 이루어진 문자열 입력받기
+
+sum = 0
+for i in input: # 문자열을 돌며 int로 변환한 문자 값 더하기
+    sum += int(i)
+
+print(sum)
