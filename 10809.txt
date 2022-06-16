@@ -1,0 +1,6 @@
+#find( ) 
+#ex) s.find(i) : s 문자열에 i가 있으면 index 반환, 없으면 -1 반환
+s = input()
+alpha = list(range(97,123)) # 'a'~'z' 범위
+for i in alpha: 
+    print(s.find(chr(i)), end=' ') 
