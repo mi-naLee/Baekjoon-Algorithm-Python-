@@ -1,0 +1,8 @@
+test = int(input())
+
+for i in range(test):
+    repeat, str = input().split() # 반복 횟수, 단어 --> str()
+
+    for j in str: # 단어를 j로 돌면서 int(반복 횟수)만큼 출력
+        print(j*int(repeat), end='')
+    print() #줄바꿈
