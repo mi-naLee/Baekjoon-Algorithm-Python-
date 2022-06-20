@@ -1,0 +1,11 @@
+input = input().upper() # upper() : 대문자 변환(출력 조건이 대문자)
+input_list = list(set(input)) # 입력된 문자열의 중복 없애기
+
+cnt=[] # 문자열의 알파벳 개수
+for i in input_list:
+    cnt.append(input.count(i))
+
+if cnt.count(max(cnt))>1: # 알파벳 개수의 최댓값이 중복되면 ?
+    print("?")
+else: # 알파벳 개수의 최댓값에 해당하는 알파벳 출력
+    print(input_list[cnt.index(max(cnt))])
