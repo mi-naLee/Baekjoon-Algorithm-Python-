@@ -1,0 +1,11 @@
+a,b = input().split()
+
+# reversed(Python의 내장함수)
+# 	: reverse iterator RTN --> "".join으로 string으로 만들어 주자.
+reversed_a = "".join(reversed(a)) 
+reversed_b = "".join(reversed(b))
+
+if reversed_a>reversed_b:
+    print(reversed_a)
+elif reversed_a<reversed_b:
+    print(reversed_b)
