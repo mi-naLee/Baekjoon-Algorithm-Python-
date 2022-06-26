@@ -1,0 +1,9 @@
+dial = ['ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ']
+input = input()
+
+sum = 0;
+for i in input: # 입력받은 문자열을 도는 i
+    for j in dial: # dial을 도는 j(' ' 는 한 묶음)
+        if i in j: # 입력받은 문자가 j 안에 있다면
+            sum += dial.index(j) +3 # 해당 묶음의 index를 RTN + 3
+print(sum)
