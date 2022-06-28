@@ -1,0 +1,7 @@
+# 크로아티아 문자를 리스트로 만듦
+croatia = ["c=","c-","dz=","d-","lj","nj","s=","z="] 
+input = input()
+
+for i in croatia:
+    input = input.replace(i,'.') # 크로아티아 문자와 같은 문자가 있다면 . 으로 바꾸기
+print(len(input))
