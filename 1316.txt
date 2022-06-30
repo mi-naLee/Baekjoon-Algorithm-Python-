@@ -1,0 +1,15 @@
+n = int(input()) # 단어의 개수 입력받기
+cnt = 0
+
+for i in range(n): 
+    input_word = input() # 단어 입력받기
+
+    check = 0 # 그룹 단어인지 아닌지 check
+    for j in range(len(input_word)-1):
+        if input_word[j] != input_word[j+1]: # 연속되지 않는 위치에
+            if input_word[j] in input_word[j+1:]: # 같은 단어가 있다면
+                check += 1 # check == 그룹 단어가 아니다
+    
+    if check == 0: # check == 0이면 그룹단어
+        cnt += 1
+print(cnt)
