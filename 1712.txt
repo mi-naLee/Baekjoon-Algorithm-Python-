@@ -1,0 +1,14 @@
+# 손익분기점 구하기
+# a(고정비용) + b(가변비용) x result(판매량) < c(상품 가격) x result(판매량)
+# ---> a+b*result < c*result
+# ---> a < c*result - b*result
+# ---> a < (c-b)*result
+# ---> a / (c-b) < result
+# ---> result = a / (c-b) +1 (이익 발생)
+a,b,c = map(int,input().split())
+
+if b>=c:
+    print(-1)
+else:
+    result = a / (c-b) +1
+    print(int(result)) # int 변환 
