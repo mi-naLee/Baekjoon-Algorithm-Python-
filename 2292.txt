@@ -1,0 +1,7 @@
+n = int(input()) #n번 방까지 이동
+
+room=i=1 
+while n>room: 
+    room += 6*i # 원 = 숫자 6 * i (몇 번째 원)
+    i += 1
+print(i)
