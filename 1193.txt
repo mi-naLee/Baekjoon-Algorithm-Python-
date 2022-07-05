@@ -1,0 +1,10 @@
+x = int(input())
+
+line = 1
+while x>line:
+    x -= line
+    line += 1
+if line%2: 	# 홀수 줄이라면
+    print(f'{line-x+1}/{x}')
+else:		# 짝수 줄이라면
+    print(f'{x}/{line-x+1}')
