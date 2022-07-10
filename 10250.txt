@@ -1,0 +1,8 @@
+test = int(input())
+
+for i in range(test):
+    h, w, n = map(int,input().split())
+    if n % h ==0:
+        print(f'{h}{n//h:02d}') # n//h를 자릿수를 맞춰서 출력
+    else:
+        print(f'{n%h}{n//h+1:02d}') #n//h+1을 자릿수를 맞춰서 출력
