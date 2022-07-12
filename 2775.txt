@@ -1,0 +1,11 @@
+test = int(input())
+
+for i in range(test):
+    k=int(input())
+    n=int(input())
+    apt = [i for i in range(1, n+1)] # 1~n호까지
+    
+    for i in range(k): # k층까지 순서대로
+        for j in range(1, n): # j호까지 (인덱스로 사용할 예정이므로 n-1의 범위)
+            apt[j] += apt[j-1] # apt + 예전 거주자를 더해서 실거주자 만들기   
+    print(apt[-1]) # 맨 마지막 호 == 구하고자 하는 호수의 거주자 수 출력
